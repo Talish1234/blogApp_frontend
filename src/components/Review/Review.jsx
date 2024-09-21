@@ -28,7 +28,7 @@ function Review({item}){
       },...prev]))
       
    } catch (error) {
-      navigate('/');
+      navigate('/login');
    }
  }
  return (
