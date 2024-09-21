@@ -1,0 +1,29 @@
+.categories-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 2em;
+
+    font-weight: bold;
+    span{
+        font-size: 1.4rem;
+    }
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        .box{
+          font-weight: lighter;
+          padding: 10px 20px;
+          border-radius: 10px;
+          a{
+            text-decoration: none;
+            color: black;
+          }
+        }
+    }
+}

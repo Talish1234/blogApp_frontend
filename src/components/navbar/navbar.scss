@@ -1,0 +1,118 @@
+@import './../../responsive.scss';
+.navbar{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .icons{
+            font-size: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            @include sm{
+                display: none;
+            }
+        }
+        .logo{
+            font-size: 2rem;
+            strong{
+                font-size: 3rem;
+                font-weight: bold;
+                color: rgb(235, 128, 56);
+            }
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            @include sm{
+                display: none;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .menu{
+               display: none;
+               &.active{
+                position: fixed;
+                top: 10px;
+                right: 30px;
+               }
+               @include sm{
+               display: block;
+               font-size: 1.4rem;
+               z-index: 999;
+            }
+        }
+        @keyframes slide-in {
+            0%{
+                position: absolute;
+                top:0;
+                right: -50%;
+            }
+            100%{
+                position: absolute;
+                top:0;
+                right: 0;
+            }
+        }
+        @keyframes slide-out {
+            0%{
+                display: flex;
+                position: absolute;
+                top:0;
+                right: 0;
+            }
+            100%{
+                position: absolute;
+                top:0;
+                right: -50%;
+            }
+        }
+        .menuList{
+             display: none;
+             top:0px;
+             right: 0px;
+             width: 50%;
+             height: 100vh;
+             position: fixed;
+             background-color: black;
+             color: transparent;
+             font-size: 1.5rem;
+             animation: slide-out 0.5s ;
+             a{
+              text-decoration: none;   
+              color: transparent;
+             }
+             &.active{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                animation: slide-in 0.5s;
+                z-index: 900;
+                a{
+                    text-decoration: none;   
+                    color: white;
+                   }
+             }
+             .icons{
+               display: flex;
+               justify-content: space-between;
+               align-items: flex-end;
+               padding: 10px;
+               gap: 20px;
+               font-size: 1.4rem;
+             }
+        }
+    }
+}

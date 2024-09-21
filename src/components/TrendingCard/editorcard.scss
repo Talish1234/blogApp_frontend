@@ -1,0 +1,49 @@
+@import './../../responsive.scss';
+
+.Editor-card-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem 0;
+    gap: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.2),-3px -3px 6px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+    .image-container{
+
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    }
+}
+    .content-contain{
+    flex: 10;
+    width: 100%;
+    .categories-box{
+        width: max-content;
+        border-radius: 8px;
+        padding: 0.4rem 0.6rem;
+        font-weight: lighter;
+        font-size: 0.6rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .date{
+        font-size: 0.8rem;
+        font-weight: lighter;
+    }
+    }
+}
+}

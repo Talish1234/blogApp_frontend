@@ -1,0 +1,45 @@
+@import './../../responsive.scss';
+.categoriesPage-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        background-color: #ffe49f;
+        margin: 2rem 0;
+        @include md{
+            width: 100%;
+        }
+        h1{
+            font-size: 1.6rem;
+            font-weight: 100;
+        }
+            }
+            .cards{
+              width: 60%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              gap: 20px;
+              @include md{
+                width: 95%;
+            }
+              button{
+                padding: 1em 2em;
+                width: max-content;
+                background-color: rgb(255, 167, 15);
+                font-weight: bold;
+                border: none;
+                &:hover{
+                    box-shadow: 0 10px 20px 0 rgb(255, 167, 15);
+                    transition: 0.3s ease-in-out;
+                }
+            }
+            }
+}

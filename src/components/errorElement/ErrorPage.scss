@@ -1,0 +1,29 @@
+@import './../../responsive.scss';
+.error-container {
+    text-align: center;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+    h1 {
+       
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff6347, #ffcc33);
+        color: #ffffff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        font-size: 9rem;
+        font-weight: bolder;
+        @include sm{
+            font-size: 5rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
+  }
+  

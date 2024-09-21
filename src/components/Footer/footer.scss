@@ -1,0 +1,68 @@
+@import './../../responsive.scss';
+
+footer{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    .footer-content{
+        display: flex;
+       
+        .left-footer-container{
+            flex: 3;
+            @include md{
+                flex:1;
+            }
+        .user-info{
+            
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img{
+                width: 3em;
+                height: 3em;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            span{
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            @include md{
+                font-size: 0.8rem;
+            }
+        }
+        a{
+            font-size: 1.4rem;
+            margin: 0 0.6rem;
+        }
+    }
+    .right-footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex: 1;
+        font-weight: bold;
+        padding-top: 1rem;
+        gap: 4rem;
+        @include md{
+            display: none;
+        }
+     .links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        font-size: 1.2rem;
+     }
+     .socials{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        font-size: 1.2rem;
+     }
+    }
+    }
+
+}

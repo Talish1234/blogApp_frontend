@@ -1,0 +1,51 @@
+@import './../../responsive.scss';
+
+.Login-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    @include sm{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    }
+    .inner-register-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: max-content;
+        padding: 3rem 6rem 2rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 3px  rgb(198, 198, 198);
+        @include sm{
+            padding: 0;
+            box-shadow: none;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:0.8rem;
+            label{
+                font-size: 1.2rem;
+            }
+            input{
+                font-size: 1rem;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                outline: none;
+            }
+            button{
+                background-color: rgb(0, 166, 255);
+                font-size: 1rem;
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+    }
+}
