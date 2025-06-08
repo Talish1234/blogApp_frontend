@@ -20,7 +20,6 @@ function App() {
       children:[{
       path:'/',
       element:<HomePage/>,
-      loader:postloader,
       errorElement:<ErrorPage/>
       },{
         path:'/categories/:id',

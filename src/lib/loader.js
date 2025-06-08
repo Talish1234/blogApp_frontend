@@ -4,12 +4,10 @@ export const postloader = async ({request,params}) => {
 
 const topPost = await apiRequest.get('post/topPost');
 const user = await apiRequest.get('/user');
-const post = await apiRequest.get('/post');
 
 return {
     topPost:topPost.data.data,
-    user:user.data.data,
-    post:post.data.data};
+    user:user.data.data};
 }
 
 export const catPostloader = async ({request,params}) => {
